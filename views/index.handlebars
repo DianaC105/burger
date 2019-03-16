@@ -1,0 +1,45 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">EAT THAT BURGER</h1>
+    {{!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> --}}
+  </div>
+</div>
+
+<h2>Eat This Burger YUM YUM YUM!</h2>
+
+<ul>
+  {{#each burger}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>WOW!That was soooo GOOD!Devoured it in seconds!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burgers-block devoured=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add any Burger you like to try
+
+</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="bur" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="devoured">Devoured?</label><br>
+    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+   
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>

@@ -1,0 +1,37 @@
+h1{
+    font-family: 'Baloo Chettan', cursive;
+    align-content: center;
+    color: orangered;
+    animation: alternate-reverse;
+
+}
+
+h2{
+    font-family: 'Baloo Chettan', cursive;
+    align-content: center;
+    color: black;
+    font-size: 30px;
+}
+body {
+    background: url("/assets/images/burger.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 50%;
+}
+
+.jumbotron{
+    text-align: center;
+    animation: alternate-reverse;
+    background-color: transparent;
+}
+
+form{
+    text-align: justify;
+    font-size: 20px;
+
+}
+
+button{
+    color: orangered;
+    background: whitesmoke;
+}
